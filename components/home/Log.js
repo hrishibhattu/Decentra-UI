@@ -22,7 +22,8 @@ export default function Log({ allDaos }) {
       <Box
         css={{
           display: 'grid',
-          gap: '2rem',
+          gap: '1.5rem',
+          row-gap: '3rem',   
           marginBottom: '5rem',
 
           '@media (min-width: 840px)': {
