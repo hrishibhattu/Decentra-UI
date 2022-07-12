@@ -23,7 +23,7 @@ export default function Log({ allDaos }) {
         css={{
           display: 'grid',
           gap: '1.5rem',
-          row-gap: '3rem',   
+          rowGap: '3rem',
           marginBottom: '5rem',
 
           '@media (min-width: 840px)': {
