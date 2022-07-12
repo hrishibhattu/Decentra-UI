@@ -22,11 +22,12 @@ export default function Log({ allDaos }) {
       <Box
         css={{
           display: 'grid',
-          gap: '2rem',
+          gap: '1.5rem',
+          rowGap: '3rem',
           marginBottom: '5rem',
 
           '@media (min-width: 840px)': {
-            gridTemplateColumns: 'repeat(2, 1fr)',
+            gridTemplateColumns: 'repeat(3, 1fr)',
             gridTemplateRows: 'auto',
           },
         }}

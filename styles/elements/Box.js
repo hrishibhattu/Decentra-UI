@@ -50,11 +50,11 @@ const Box = styled('div', {
         },
       },
       card: {
-        background: '$gray2',
+        background: '#56585d',
         color: '$gray11',
-        width: '12rem',
+        width: '18rem',
         height: '100%',
-        padding: '0.5rem',
+        padding: '0.75rem 1rem',
 
         display: 'flex',
         flexDirection: 'row',
@@ -62,16 +62,15 @@ const Box = styled('div', {
         alignItems: 'center',
 
         gap: '1rem',
-        border: '1px solid $mauve10',
-        borderRadius: '20px',
+        borderRadius: '15px',
         lineHeight: '100%',
         textDecoration: 'none',
         overflow: 'hidden',
+        boxShadow: 'rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px',
 
         '&:hover': {
           background: '$gray3',
           color: '$gray12',
-          border: '1px solid $mauve11',
         },
         '&:active': {
           background: '$gray4',
