@@ -53,7 +53,7 @@ const Box = styled('div', {
         background: '#56585d',
         color: '$gray11',
         width: '18rem',
-        height: '100%',
+        minHeight: '100.58px',
         padding: '0.75rem 1rem',
 
         display: 'flex',
