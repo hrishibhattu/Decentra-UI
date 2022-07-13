@@ -26,7 +26,7 @@ export default function Header({ heading, props }) {
           position: 'relative',
           width: '100%',
           height: '5rem',
-          padding: '0 1rem 0 1rem',
+          padding: '0px 1.5rem',
           justifyContent: 'space-between',
           alignItems: 'center',
           gap: '5rem',
