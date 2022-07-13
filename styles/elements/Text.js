@@ -7,8 +7,7 @@ const Text = styled('div', {
     variant: {
       heading: {
         fontSize: '32px',
-        fontFamily: 'Bold',
-        color: '$gray12',
+        color: '#bdbdbd',
       },
       link: {
         display: 'flex',
