@@ -14,7 +14,7 @@ export default function NewDao() {
           css={{
             position: 'relative',
             height: '96.58px',
-            color: '$mauve11',
+            color: '#898888c2',
             border: '2px solid #737373ad',
             padding: '0.7rem',
             fontSize: '20px',
@@ -39,7 +39,7 @@ export default function NewDao() {
             },
           }}
         >
-          <PlusIcon height="20px" width="20px" /> Create
+          <PlusIcon height="20px" width="20px" /> Create community
         </Flex>
       </DialogTrigger>
       <DialogContent>
