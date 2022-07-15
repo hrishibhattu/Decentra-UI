@@ -8,6 +8,7 @@ const StyledHeader = styled(Flex, {
   borderBottom: '1px solid #a3a3ac1a',
   boxShadow: '0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d',
   background: '#36393f',
+  hieght: '74px',
   width: '100%',
   position: 'fixed',
   left: '0',
@@ -41,9 +42,7 @@ export default function Header({ heading, props }) {
           variant="heading"
           css={{
             fontFamily: 'Screen',
-            '@media (max-width: 1040px)': {
-              display: 'none',
-            },
+            paddingTop: '6px',
           }}
         >
           {heading}
