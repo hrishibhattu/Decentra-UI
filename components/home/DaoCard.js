@@ -55,8 +55,8 @@ export default function DaoCard({ dao, chain }) {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          height: '30px',
-          width: '30px',
+          height: '40px',
+          width: '40px',
         }}
       >
         {getRandomEmoji(dao['id'])}
