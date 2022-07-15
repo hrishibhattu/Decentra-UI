@@ -4,18 +4,13 @@ import { Flex } from '../../styles/elements'
 export default function Headertitle() {
   return (
     <Flex
-      align="center"
       dir="row"
       css={{
         position: 'relative',
-        height: '96.18px',
-        color: '#898888c2',
-        border: '2px solid #737373ad',
+        color: '#bdbdbd',
         padding: '0.7rem',
-        fontSize: '20px',
+        fontSize: '50px',
         fontFamily: 'Screen',
-        borderRadius: '15px',
-        gap: '20px',
       }}
     >
       We help you create a DAO without code. In less than 5 minutes.
