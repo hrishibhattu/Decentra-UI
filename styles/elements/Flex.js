@@ -30,6 +30,9 @@ const Flex = styled('div', {
       sm: {
         gap: '0.2rem',
       },
+      sm:firstChild: {
+        gap: '0.2rem',
+      },
       md: {
         gap: '1.2em',
       },
