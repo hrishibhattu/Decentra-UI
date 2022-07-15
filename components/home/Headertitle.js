@@ -8,9 +8,10 @@ export default function Headertitle() {
       css={{
         position: 'relative',
         color: '#bdbdbd',
-        padding: '0.7rem',
         fontSize: '50px',
         fontFamily: 'Screen',
+        maxWidth: '1008px',
+        marginBottom: '80px',
       }}
     >
       We help you create a DAO without code. In less than 5 minutes.
