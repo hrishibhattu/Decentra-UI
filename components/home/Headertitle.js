@@ -4,7 +4,6 @@ import { Flex } from '../../styles/elements'
 export default function Headertitle() {
   return (
     <Flex
-      dir="row"
       css={{
         position: 'relative',
         color: '#bdbdbd',
