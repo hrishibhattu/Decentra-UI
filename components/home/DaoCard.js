@@ -62,7 +62,11 @@ export default function DaoCard({ dao, chain }) {
         {getRandomEmoji(dao['id'])}
       </Box>
       <Flex dir="col" gap="sm">
-        <Name>{dao['token']['name']}</Name>
+        <Name
+css={{
+     fontSize: '19px'
+    }}
+     >{dao['token']['name']}</Name>
         {dao['members'] != undefined && <Name>{dao['members'].length} Members</Name>}
         <Address>{truncateAddress(dao['id'])}</Address>
       </Flex>
