@@ -13,15 +13,14 @@ export default function NewDao() {
           dir="row"
           css={{
             position: 'relative',
-            height: 'auto',
-            background: '$violet4',
+            height: '96.58px',
             color: '$mauve11',
-            border: '1px solid $violet5',
+            border: '2px solid #737373ad',
             padding: '0.7rem',
             fontSize: '20px',
             fontFamily: 'Screen',
-            borderRadius: '20px',
-            gap: '5px',
+            borderRadius: '15px',
+            gap: '20px',
 
             '&:hover': {
               background: '$violet5',
