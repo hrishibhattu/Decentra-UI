@@ -8,7 +8,7 @@ export default function ActivityLog({ allDaos }) {
       <Flex
         as="h2"
         css={{
-          fontSize: '36px',
+          fontSize: '26px',
           minWidth: '25rem',
           height: 'auto',
           paddingBottom: '0.5rem',
@@ -21,7 +21,7 @@ export default function ActivityLog({ allDaos }) {
           },
         }}
       >
-        Your communities <NewDao />
+        All communities <NewDao />
       </Flex>
       {allDaos && <Log allDaos={allDaos && allDaos} />}
     </Flex>
