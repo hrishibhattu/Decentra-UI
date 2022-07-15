@@ -13,7 +13,7 @@ export default function NewDao() {
           dir="row"
           css={{
             position: 'relative',
-            height: '96.58px',
+            height: '96.18px',
             color: '#898888c2',
             border: '2px solid #737373ad',
             padding: '0.7rem',
