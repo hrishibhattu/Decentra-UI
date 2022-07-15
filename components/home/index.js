@@ -15,23 +15,11 @@ export const ResultsText = styled('div', {
 
 export const Results = styled('div', {
   display: 'grid',
-  gap: '2rem',
+  gap: '1.5rem',
   marginBottom: '5rem',
 
-  '@media (min-width: 540px)': {
-    gridTemplateColumns: 'repeat(2, 1fr)',
-    gridTemplateRows: 'auto',
-  },
   '@media (min-width: 840px)': {
     gridTemplateColumns: 'repeat(3, 1fr)',
-    gridTemplateRows: 'auto',
-  },
-  '@media (min-width: 940px)': {
-    gridTemplateColumns: 'repeat(4, 1fr)',
-    gridTemplateRows: 'auto',
-  },
-  '@media (min-width: 1040px)': {
-    gridTemplateColumns: 'repeat(5, 1fr)',
     gridTemplateRows: 'auto',
   },
 })
