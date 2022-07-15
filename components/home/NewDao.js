@@ -13,16 +13,14 @@ export default function NewDao() {
           dir="row"
           css={{
             position: 'relative',
-            height: 'auto',
-            minWidth: '45px',
-            background: '$violet4',
-            color: '$mauve11',
-            border: '1px solid $violet5',
+            height: '96.18px',
+            color: '#898888c2',
+            border: '2px solid #737373ad',
             padding: '0.7rem',
             fontSize: '20px',
-            fontFamily: 'Bold',
-            borderRadius: '20px',
-            gap: '5px',
+            fontFamily: 'Screen',
+            borderRadius: '15px',
+            gap: '20px',
 
             '&:hover': {
               background: '$violet5',
@@ -41,7 +39,7 @@ export default function NewDao() {
             },
           }}
         >
-          Create <PlusIcon height="20px" width="20px" />
+          <PlusIcon height="20px" width="20px" /> Create community
         </Flex>
       </DialogTrigger>
       <DialogContent>

@@ -1,5 +1,4 @@
 import { Flex } from '../../styles/elements'
-import NewDao from './NewDao'
 import Log from './Log'
 
 export default function ActivityLog({ allDaos }) {
@@ -21,7 +20,7 @@ export default function ActivityLog({ allDaos }) {
           },
         }}
       >
-        All communities <NewDao />
+        All communities
       </Flex>
       {allDaos && <Log allDaos={allDaos && allDaos} />}
     </Flex>
