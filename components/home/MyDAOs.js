@@ -29,7 +29,6 @@ export default function MyDAOs({ allDaos }) {
           flexDirection: 'column',
           alignItems: 'center',
           '@media (max-width: 768px)': {
-            flexDirection: 'column-reverse',
             alignItems: 'center',
             justifyContent: 'center',
           },
