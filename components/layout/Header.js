@@ -1,5 +1,5 @@
 import React from 'react'
-import Kali from './Kali'
+import Link from 'next/link'
 import { styled } from '../../styles/stitches.config'
 import { Flex, Text } from '../../styles/elements'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
@@ -37,16 +37,22 @@ export default function Header({ heading, props }) {
           },
         }}
       >
-        <Text
-          as="h1"
-          variant="heading"
-          css={{
-            fontFamily: 'Screen',
-            paddingTop: '6px',
-          }}
-        >
-          {heading}
-        </Text>
+        <Link href="/">
+          <Text
+            as="h1"
+            variant="heading"
+            css={{
+              fontFamily: 'Screen',
+              paddingTop: '6px',
+              '@media (max-width: 1040px)': {
+                display: 'none',
+              },
+            }}
+          >
+            {heading}
+          </Text>
+        </Link>
+
         <ConnectButton>Connect</ConnectButton>
       </Flex>
     </StyledHeader>

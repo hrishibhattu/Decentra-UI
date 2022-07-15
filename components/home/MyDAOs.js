@@ -20,12 +20,18 @@ export default function MyDAOs({ allDaos }) {
       <Flex
         dir="col"
         css={{
-          gap: '1rem',
           position: 'absolute',
-          left: '10%',
-          right: '10%',
-          top: '6rem',
-          justifyContent: 'center',
+          top: '7rem',
+          right: '5rem',
+          left: '5rem',
+          justifyContent: 'space-evenly',
+          flexDirection: 'column',
+          alignItems: 'center',
+          '@media (max-width: 768px)': {
+            flexDirection: 'column-reverse',
+            alignItems: 'center',
+            justifyContent: 'center',
+          },
         }}
       >
         {daos &&
@@ -35,9 +41,11 @@ export default function MyDAOs({ allDaos }) {
             daos.length === 1 && <ResultsText>You are in {daos.length} DAO</ResultsText>
           ))}
         <Results>{daos && daos.map((dao) => <DaoCard key={dao['dao']['id']} dao={dao['dao']} />)}</Results>
+
+        {<Welcome allDaos={allDaos && allDaos} />}
+
+        {daos && daos.length === 0 && <Welcome allDaos={allDaos && allDaos} />}
       </Flex>
-      {!account && !daos && <Welcome allDaos={allDaos && allDaos} />}
-      {daos && daos.length === 0 && <Welcome allDaos={allDaos && allDaos} />}
     </>
   )
 }
