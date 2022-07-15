@@ -34,7 +34,9 @@ export default function MyDAOs({ allDaos }) {
           },
         }}
       >
-        <NewDao />
+        <Heeader> 
+        We help you create a DAO without code. In less than 5 minutes.
+        </Header>
         {daos &&
           (daos.length > 1 ? (
             <ResultsText> You are in {daos.length} DAOs </ResultsText>
