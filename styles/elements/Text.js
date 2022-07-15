@@ -6,7 +6,7 @@ const Text = styled('div', {
   variants: {
     variant: {
       heading: {
-        fontSize: '32px',
+        fontSize: '28px',
         color: '#bdbdbd',
       },
       link: {
