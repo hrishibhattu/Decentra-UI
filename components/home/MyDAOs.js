@@ -34,7 +34,7 @@ export default function MyDAOs({ allDaos }) {
           },
         }}
       >
-              <NewDao />
+        <NewDao />
         {daos &&
           (daos.length > 1 ? (
             <ResultsText> You are in {daos.length} DAOs </ResultsText>
