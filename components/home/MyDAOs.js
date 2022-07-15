@@ -9,7 +9,6 @@ import DaoCard from './DaoCard'
 import NewDao from './NewDao'
 import Headertitle from './Headertitle'
 
-
 export default function MyDAOs({ allDaos }) {
   const { activeChain } = useNetwork()
   const { data: account } = useAccount()
