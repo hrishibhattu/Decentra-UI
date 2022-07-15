@@ -18,6 +18,9 @@ export default function MyDAOs({ allDaos }) {
 
   return (
     <>
+    <Text>
+    We help you create a DAO without code. In less than 5 minutes.
+    </Text>
       <Flex
         dir="col"
         css={{
