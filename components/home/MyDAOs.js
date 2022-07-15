@@ -7,6 +7,7 @@ import { Flex } from '../../styles/elements'
 import { Results, ResultsText } from './index'
 import DaoCard from './DaoCard'
 import NewDao from './NewDao'
+import Headertitle from './Headertitle'
 
 export default function MyDAOs({ allDaos }) {
   const { activeChain } = useNetwork()
@@ -34,6 +35,7 @@ export default function MyDAOs({ allDaos }) {
           },
         }}
       >
+        <Headertitle />
         {daos &&
           (daos.length > 1 ? (
             <ResultsText> You are in {daos.length} DAOs </ResultsText>
