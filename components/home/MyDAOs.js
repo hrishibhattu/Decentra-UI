@@ -40,13 +40,13 @@ export default function MyDAOs({ allDaos }) {
           ) : (
             daos.length === 1 && <ResultsText>You are in {daos.length} DAO</ResultsText>
           ))}
-        <Results>{daos && daos.map((dao) => <DaoCard key={dao['dao']['id']} dao={dao['dao']} />)}</Results>
+        <Results>{daos && daos.map((dao) => <DaoCard key={dao['dao']['id']} dao={dao['dao']} />)}        <NewDao />
+</Results>
 
         {<Welcome allDaos={allDaos && allDaos} />}
 
         {daos && daos.length === 0 && <Welcome allDaos={allDaos && allDaos} />}
 
-        <NewDao />
       </Flex>
     </>
   )
