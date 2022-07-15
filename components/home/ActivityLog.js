@@ -9,10 +9,8 @@ export default function ActivityLog({ allDaos }) {
         as="h2"
         css={{
           fontSize: '36px',
-          fontFamily: 'Bold',
           minWidth: '25rem',
           height: 'auto',
-          borderBottom: '1px solid $gray6',
           paddingBottom: '0.5rem',
           justifyContent: 'space-between',
           alignItems: 'center',
@@ -23,7 +21,7 @@ export default function ActivityLog({ allDaos }) {
           },
         }}
       >
-        🚀 Decentra's communities. <NewDao />
+        Your communities <NewDao />
       </Flex>
       {allDaos && <Log allDaos={allDaos && allDaos} />}
     </Flex>
