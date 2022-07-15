@@ -18,6 +18,7 @@ export default function MyDAOs({ allDaos }) {
 
   return (
     <>
+    <NewDao />
       <Flex
         dir="col"
         css={{
