@@ -18,7 +18,6 @@ export default function MyDAOs({ allDaos }) {
 
   return (
     <>
-      <NewDao />
       <Flex
         dir="col"
         css={{
@@ -35,6 +34,7 @@ export default function MyDAOs({ allDaos }) {
           },
         }}
       >
+              <NewDao />
         {daos &&
           (daos.length > 1 ? (
             <ResultsText> You are in {daos.length} DAOs </ResultsText>
