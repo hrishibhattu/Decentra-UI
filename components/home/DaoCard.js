@@ -63,10 +63,12 @@ export default function DaoCard({ dao, chain }) {
       </Box>
       <Flex dir="col" gap="sm">
         <Name
-css={{
-     fontSize: '19px'
-    }}
-     >{dao['token']['name']}</Name>
+          css={{
+            fontSize: '19px',
+          }}
+        >
+          {dao['token']['name']}
+        </Name>
         {dao['members'] != undefined && <Name>{dao['members'].length} Members</Name>}
         <Address>{truncateAddress(dao['id'])}</Address>
       </Flex>
