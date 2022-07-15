@@ -34,7 +34,7 @@ export default function MyDAOs({ allDaos }) {
           },
         }}
       >
-        <Heeader> 
+        <Header> 
         We help you create a DAO without code. In less than 5 minutes.
         </Header>
         {daos &&
