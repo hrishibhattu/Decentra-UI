@@ -14,13 +14,12 @@ export default function NewDao() {
           css={{
             position: 'relative',
             height: 'auto',
-            minWidth: '45px',
             background: '$violet4',
             color: '$mauve11',
             border: '1px solid $violet5',
             padding: '0.7rem',
             fontSize: '20px',
-            fontFamily: 'Bold',
+            fontFamily: 'Screen',
             borderRadius: '20px',
             gap: '5px',
 
@@ -41,7 +40,7 @@ export default function NewDao() {
             },
           }}
         >
-          Create <PlusIcon height="20px" width="20px" />
+          <PlusIcon height="20px" width="20px" /> Create
         </Flex>
       </DialogTrigger>
       <DialogContent>
