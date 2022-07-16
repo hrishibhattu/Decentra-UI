@@ -17,10 +17,10 @@ const StyledHeader = styled(Flex, {
   justifyContent: 'space-between',
   alignItems: 'center',
   zIndex: '99',
-  margin-left: '250px',
+  marginLeft: '250px',
 })
 
-export default function Header({ heading, props }) {
+export default function Header({ headingdao, props }) {
   return (
     <StyledHeader {...props}>
       <Flex
