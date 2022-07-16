@@ -11,6 +11,7 @@ export default function Headertitle() {
         fontFamily: 'Screen',
         maxWidth: '1008px',
         margin: '35px 0px 80px 0',
+        lineHeight: '1.1',
       }}
     >
       We help you create a DAO without code. In less than 5 minutes.
