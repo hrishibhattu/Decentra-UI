@@ -51,12 +51,11 @@ export default function Menu({ saleActive }) {
     <Flex
       css={{
         position: 'fixed',
-        top: '7rem',
-        bottom: '0',
-        left: '1rem',
-        right: '0',
         flexDirection: 'column',
         gap: '2rem',
+        background: '#2f3136',
+        width: '250px',
+        height: '100%',
       }}
     >
       <Icon>
