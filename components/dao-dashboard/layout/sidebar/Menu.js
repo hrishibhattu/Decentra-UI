@@ -58,18 +58,19 @@ export default function Menu({ saleActive }) {
         height: '100%',
       }}
     >
-      <Icon as="a"
+      <Icon
+        as="a"
         css={{
-    width: '250px',
-    background: '#2f3136',
-    maxWidth: '250px',
-    borderRadius: '0',
-    height: '74px',
-    padding: '0p',
-    borderBottom: '1px solid #a3a3ac1a',
-    boxShadow: '0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d',
-            }}
->
+          width: '250px',
+          background: '#2f3136',
+          maxWidth: '250px',
+          borderRadius: '0',
+          height: '74px',
+          padding: '0p',
+          borderBottom: '1px solid #a3a3ac1a',
+          boxShadow: '0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d',
+        }}
+      >
         <Link
           href={{
             pathname: '/daos/[chainId]/[dao]/info',
