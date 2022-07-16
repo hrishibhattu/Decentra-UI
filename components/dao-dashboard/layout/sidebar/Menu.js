@@ -58,6 +58,7 @@ export default function Menu({ saleActive }) {
         height: '100%',
       }}
     >
+      <Icon>
         <Link
           href={{
                pathname: '/',
@@ -75,6 +76,7 @@ export default function Menu({ saleActive }) {
               >
               DAOName              
         </Link>
+      </Icon>
       <Icon>
         <Link
           href={{
