@@ -6,7 +6,7 @@ export default function NewDao() {
   return (
     <Dialog>
       <DialogTrigger>
-        <Box variant="create">+</Box>
+        <Box variant="create"></Box>
       </DialogTrigger>
       <DialogContent>
         <DialogClose asChild />

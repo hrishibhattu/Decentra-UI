@@ -20,9 +20,9 @@ import { HiHome, HiOutlineHome } from 'react-icons/hi'
 
 const Icon = styled('span', {
   display: 'flex',
-  justifyContent: 'center',
+  justifyContent: 'flex-start',
   padding: '6px',
-  alignItems: 'center',
+  alignItems: 'flex-satrt',
   background: '$background',
   maxWidth: '2rem',
   borderRadius: '100%',
@@ -54,7 +54,8 @@ export default function Menu({ saleActive }) {
         flexDirection: 'column',
         gap: '2rem',
         background: '#2f3136',
-        width: '250px',
+        width: '200px',
+        paddingLeft: '2em',
         height: '100%',
       }}
     >
@@ -95,11 +96,7 @@ export default function Menu({ saleActive }) {
           }}
           passHref
         >
-          {path.includes('treasury') || path.includes('members', 'info') || path.includes('info') ? (
-            <HiOutlineHome size={30} />
-          ) : (
-            <HiHome size={30} />
-          )}
+          <h3 style={{ color: 'white' }}>Home</h3>
         </Link>
       </Icon>
       <Icon>
@@ -113,7 +110,7 @@ export default function Menu({ saleActive }) {
           }}
           passHref
         >
-          {path.includes('treasury') ? <BsFillPiggyBankFill size={30} /> : <BsPiggyBank size={30} />}
+          <h3 style={{ color: 'white' }}>Treasury</h3>
         </Link>
       </Icon>
 
@@ -128,7 +125,7 @@ export default function Menu({ saleActive }) {
           }}
           passHref
         >
-          {path.includes('members') ? <BsFillPeopleFill size={30} /> : <BsPeople size={30} />}
+          <h3 style={{ color: 'white' }}>Members</h3>
         </Link>
       </Icon>
       {saleActive === true && (
@@ -142,9 +139,7 @@ export default function Menu({ saleActive }) {
               },
             }}
           >
-            <Icon as="a">
-              <GiCoins size={30} />
-            </Icon>
+            crowdsale
           </Link>
         </Icon>
       )}
@@ -158,13 +153,15 @@ export default function Menu({ saleActive }) {
           href={{
             pathname: '/services',
           }}
+          style={{ color: 'white' }}
           passHref
         >
-          {path.includes('services') ? <BsBriefcaseFill size={30} /> : <BsBriefcase size={30} />}
+          <h3 style={{ color: 'white' }}>Services</h3>
         </Link>
       </Icon>
       <Icon as="a">
         <Link
+          style={{ color: 'white' }}
           href={{
             pathname: '/daos/[chainId]/[dao]/info',
             query: {
@@ -174,7 +171,7 @@ export default function Menu({ saleActive }) {
           }}
           passHref
         >
-          {path.includes('info') ? <RiInformationFill size={30} /> : <RiInformationLine size={30} />}
+          <h3 style={{ color: 'white' }}>Info</h3>
         </Link>
       </Icon>
     </Flex>

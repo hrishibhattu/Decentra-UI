@@ -20,7 +20,7 @@ export default function ActivityLog({ allDaos }) {
           },
         }}
       >
-        All communities
+        All DAOs
       </Flex>
       {allDaos && <Log allDaos={allDaos && allDaos} />}
     </Flex>
