@@ -113,7 +113,7 @@ export default function Menu({ saleActive }) {
           }}
           passHref
         >
-          {path.includes('treasury') ? <BsFillPiggyBankFill size={30} /> : <BsPiggyBank size={30} />} Treasury
+          {path.includes('treasury') ? <BsFillPiggyBankFill size={30} /> : <BsPiggyBank size={30} />}
         </Link>
       </Icon>
 
@@ -128,7 +128,7 @@ export default function Menu({ saleActive }) {
           }}
           passHref
         >
-          {path.includes('members') ? <BsFillPeopleFill size={30} /> : <BsPeople size={30} />} Members
+          {path.includes('members') ? <BsFillPeopleFill size={30} /> : <BsPeople size={30} />}
         </Link>
       </Icon>
       {saleActive === true && (
