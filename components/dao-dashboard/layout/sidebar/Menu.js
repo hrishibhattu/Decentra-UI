@@ -66,7 +66,7 @@ export default function Menu({ saleActive }) {
           maxWidth: '250px',
           borderRadius: '0',
           height: '74px',
-          padding: '0p',
+          padding: '0px',
           borderBottom: '1px solid #a3a3ac1a',
           boxShadow: '0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d',
         }}
