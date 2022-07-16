@@ -100,7 +100,7 @@ export default function Menu({ saleActive }) {
           ) : (
             <HiHome size={30} />
           )}
-            </Link>
+        </Link>
       </Icon>
       <Icon>
         <Link
