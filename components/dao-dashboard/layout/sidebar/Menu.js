@@ -99,9 +99,8 @@ export default function Menu({ saleActive }) {
             <HiOutlineHome size={30} />
           ) : (
             <HiHome size={30} />
-          )}{' '}
-          Home
-        </Link>
+          )}
+            </Link>
       </Icon>
       <Icon>
         <Link
@@ -161,7 +160,7 @@ export default function Menu({ saleActive }) {
           }}
           passHref
         >
-          {path.includes('services') ? <BsBriefcaseFill size={30} /> : <BsBriefcase size={30} />} Services
+          {path.includes('services') ? <BsBriefcaseFill size={30} /> : <BsBriefcase size={30} />}
         </Link>
       </Icon>
       <Icon as="a">
