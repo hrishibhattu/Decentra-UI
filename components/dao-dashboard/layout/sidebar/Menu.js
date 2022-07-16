@@ -51,14 +51,39 @@ export default function Menu({ saleActive }) {
     <Flex
       css={{
         position: 'fixed',
-        top: '7rem',
-        bottom: '0',
-        left: '1rem',
-        right: '0',
         flexDirection: 'column',
         gap: '2rem',
+        background: '#2f3136',
+        width: '250px',
+        height: '100%',
       }}
     >
+      <Icon
+        as="a"
+        css={{
+          width: '250px',
+          background: '#2f3136',
+          maxWidth: '250px',
+          borderRadius: '0',
+          height: '74px',
+          padding: '0px',
+          borderBottom: '1px solid #a3a3ac1a',
+          boxShadow: '0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d',
+        }}
+      >
+        <Link
+          href={{
+            pathname: '/daos/[chainId]/[dao]/info',
+            query: {
+              chainId: router.query.chainId,
+              dao: router.query.dao,
+            },
+          }}
+          passHref
+        >
+          DAOName
+        </Link>
+      </Icon>
       <Icon>
         <Link
           href={{
