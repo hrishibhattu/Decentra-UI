@@ -58,20 +58,20 @@ export default function Menu({ saleActive }) {
         height: '100%',
       }}
     >
-      <Link
-        css={{
-          width: '250px',
-          height: '74px',
-          background: '#2f3136',
-          maxWidth: '250px',
-          borderRadius: '0px',
-          padding: '0px',
-          borderBottom: '1px solid #a3a3ac1a',
-          boxShadow: '0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d',
-        }}
-      >
-        DAOName
-      </Link>
+      <Icon as="a">
+        <Link
+          href={{
+            pathname: '/daos/[chainId]/[dao]/info',
+            query: {
+              chainId: router.query.chainId,
+              dao: router.query.dao,
+            },
+          }}
+          passHref
+        >
+DAOName
+            </Link>
+      </Icon>
       <Icon>
         <Link
           href={{
