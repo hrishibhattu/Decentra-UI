@@ -60,8 +60,10 @@ export const ProposalCard = ({ proposal }) => {
         padding: '1rem 0.5rem 1rem 0.5rem',
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
-        borderBottom: '1px solid hsla(0, 0%, 90%, 0.1)',
-        borderTop: '1px solid hsla(0, 0%, 90%, 0.1)',
+        background: '#3d4046',
+        marginBottom: '25px',
+        borderRadius: '12px',
+    
         '&:hover': {
           background: '$gray800',
         },
