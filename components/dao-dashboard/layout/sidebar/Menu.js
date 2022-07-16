@@ -69,8 +69,8 @@ export default function Menu({ saleActive }) {
           }}
           passHref
         >
-DAOName
-            </Link>
+          DAOName
+        </Link>
       </Icon>
       <Icon>
         <Link
