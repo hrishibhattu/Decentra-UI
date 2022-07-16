@@ -99,7 +99,8 @@ export default function Menu({ saleActive }) {
             <HiOutlineHome size={30} />
           ) : (
             <HiHome size={30} />
-          )} Home
+          )}{' '}
+          Home
         </Link>
       </Icon>
       <Icon>
