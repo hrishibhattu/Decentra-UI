@@ -2,7 +2,7 @@ import Layout from '../../layout'
 import Sidebar from './sidebar/'
 import { Box } from '../../../styles/elements'
 
-export default function DaoLayout({ headingdao, crowdsale, children, props }) {
+export default function DaoLayout({ heading, crowdsale, children, props }) {
   return (
     <Layout heading={headingdao} {...props}>
       <Sidebar crowdsale={crowdsale} />
