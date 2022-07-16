@@ -99,7 +99,7 @@ export default function Menu({ saleActive }) {
             <HiOutlineHome size={30} />
           ) : (
             <HiHome size={30} />
-          )}
+          )} Home
         </Link>
       </Icon>
       <Icon>
@@ -113,7 +113,7 @@ export default function Menu({ saleActive }) {
           }}
           passHref
         >
-          {path.includes('treasury') ? <BsFillPiggyBankFill size={30} /> : <BsPiggyBank size={30} />}
+          {path.includes('treasury') ? <BsFillPiggyBankFill size={30} /> : <BsPiggyBank size={30} />} Treasury
         </Link>
       </Icon>
 
@@ -128,7 +128,7 @@ export default function Menu({ saleActive }) {
           }}
           passHref
         >
-          {path.includes('members') ? <BsFillPeopleFill size={30} /> : <BsPeople size={30} />}
+          {path.includes('members') ? <BsFillPeopleFill size={30} /> : <BsPeople size={30} />} Members
         </Link>
       </Icon>
       {saleActive === true && (
@@ -160,7 +160,7 @@ export default function Menu({ saleActive }) {
           }}
           passHref
         >
-          {path.includes('services') ? <BsBriefcaseFill size={30} /> : <BsBriefcase size={30} />}
+          {path.includes('services') ? <BsBriefcaseFill size={30} /> : <BsBriefcase size={30} />} Services
         </Link>
       </Icon>
       <Icon as="a">
