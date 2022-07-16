@@ -20,7 +20,7 @@ const StyledHeader = styled(Flex, {
   marginLeft: '250px',
 })
 
-export default function Header({ headingdao, props }) {
+export default function Header({ heading, props }) {
   return (
     <StyledHeader {...props}>
       <Flex
