@@ -54,7 +54,6 @@ export default function Menu({ saleActive }) {
       css={{
         position: 'fixed',
         flexDirection: 'column',
-        gap: '2rem',
         background: '#2f3136',
         width: '200px',
         height: '100%',
@@ -74,12 +73,11 @@ export default function Menu({ saleActive }) {
             <div
               style={{
                 marginTop: '0em',
-                borderBottom: '0.2px solid gray',
                 color: 'white',
                 display: 'flex',
                 alignItems: 'center',
                 paddingLeft: '10px',
-                height: '50px',
+                height: '35px',
               }}
             >
               {link.title}
