@@ -41,7 +41,7 @@ export default function DaoCard({ dao, chain }) {
       variant="card"
       onClick={gotoDAO}
       css={{
-        height: '150px',
+        height: '100.58px',
         '@media (max-width: 768px)': {
           fontSize: '18px',
           minWidth: '20rem',
@@ -56,8 +56,8 @@ export default function DaoCard({ dao, chain }) {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          height: '60px',
-          width: '60px',
+          height: '48px',
+          width: '48px',
         }}
       >
         {getRandomEmoji(dao['id'])}
@@ -66,7 +66,6 @@ export default function DaoCard({ dao, chain }) {
         <Name
           css={{
             fontSize: '24px',
-            marginBottom: '1em',
           }}
         >
           {dao['token']['name']}
