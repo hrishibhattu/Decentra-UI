@@ -22,7 +22,7 @@ export const Results = styled('div', {
   '@media (min-width: 840px)': {
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridTemplateRows: 'auto',
-    width: '42%',
+    width: '1008px',
   },
 })
 

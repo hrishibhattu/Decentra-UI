@@ -8,7 +8,7 @@ export default function ActivityLog({ allDaos }) {
         as="h2"
         css={{
           fontSize: '26px',
-          minWidth: '25rem',
+          width: '100%',
           height: 'auto',
           paddingBottom: '0.5rem',
           justifyContent: 'space-between',

@@ -10,7 +10,7 @@ export function Dashboard({ proposals }) {
         background: '$background',
         position: 'relative',
         justifyContent: 'space-evenly',
-        minWidth: '80vw',
+        maxWidth: '80vw',
         gap: '1rem',
         marginRight: '1rem',
       }}

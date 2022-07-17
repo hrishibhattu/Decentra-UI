@@ -7,10 +7,12 @@ export default function Headertitle() {
       css={{
         position: 'relative',
         color: '#bdbdbd',
-        fontSize: '50px',
-        fontFamily: 'Screen',
+        fontSize: '40px',
+        fontFamily: 'arial',
         maxWidth: '1008px',
         margin: '35px 0px 80px 0',
+        display: 'flex',
+        flexDirection: 'column',
       }}
     >
       Create your DAO, mint your token today with 0 code written.

@@ -12,7 +12,8 @@ export default function InfoComponent({ info }) {
       css={{
         display: 'grid',
         gap: '3rem',
-        minWidth: '90vw',
+        maxWidth: '90vw',
+        paddingLeft: '10vh',
         gridTemplateColumns: 'repeat(2, 1fr)',
         gridTemplateRows: 'auto',
         '@media (max-width: 640px)': {

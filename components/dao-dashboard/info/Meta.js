@@ -9,7 +9,12 @@ export default function Meta({ info }) {
   const router = useRouter()
 
   return (
-    <Info heading={info && info['token']['name']}>
+    <Info
+      heading={info && info['token']['name']}
+      css={{
+        backgroundColor: '#303030',
+      }}
+    >
       {info !== undefined ? (
         <Flex dir="col" gap="md">
           <Flex gap="md" align="separate">
