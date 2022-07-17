@@ -62,7 +62,11 @@ export default function DaoCard({ dao, chain }) {
       >
         {getRandomEmoji(dao['id'])}
       </Box>
-      <Flex dir="col" gap="sm">
+      <Flex dir="col" gap="sm"
+css={{
+            gap: '10px',
+          }}
+        >
         <Name
           css={{
             fontSize: '24px',
