@@ -17,10 +17,12 @@ export const Results = styled('div', {
   display: 'grid',
   gap: '1.5rem',
   marginBottom: '5rem',
+  paddingLeft: '0rem',
 
   '@media (min-width: 840px)': {
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridTemplateRows: 'auto',
+    width: '42%',
   },
 })
 

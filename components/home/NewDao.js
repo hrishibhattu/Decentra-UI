@@ -13,7 +13,7 @@ export default function NewDao() {
           dir="row"
           css={{
             position: 'relative',
-            height: '96.18px',
+            height: '150px',
             border: '1px solid red',
             color: '#898888c2',
             border: '2px solid #737373ad',
@@ -40,7 +40,7 @@ export default function NewDao() {
             },
           }}
         >
-          <PlusIcon height="20px" width="20px" /> Create community
+          <PlusIcon height="20px" width="20px" /> Create DAO
         </Flex>
       </DialogTrigger>
       <DialogContent>

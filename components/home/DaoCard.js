@@ -41,7 +41,7 @@ export default function DaoCard({ dao, chain }) {
       variant="card"
       onClick={gotoDAO}
       css={{
-        height: '200px',
+        height: '150px',
         '@media (max-width: 768px)': {
           fontSize: '18px',
           minWidth: '20rem',

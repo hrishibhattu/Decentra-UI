@@ -24,6 +24,7 @@ export default function Log({ allDaos }) {
         <Select.Item value={42161}>Arbitrum</Select.Item>
         <Select.Item value={10}>Optimism</Select.Item>
       </Select>
+
       <Box
         css={{
           display: 'grid',
