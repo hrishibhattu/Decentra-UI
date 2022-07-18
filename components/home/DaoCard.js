@@ -8,7 +8,7 @@ import { getRandomEmoji } from '../../utils/'
 import { Avatar, AvatarImage, AvatarFallback } from '@radix-ui/react-avatar'
 
 const Name = styled('div', {
-  fontFamily: 'Screen',
+  fontFamily: 'arial',
 })
 
 const Address = styled('div', {
@@ -41,6 +41,7 @@ export default function DaoCard({ dao, chain }) {
       variant="card"
       onClick={gotoDAO}
       css={{
+        height: '100.58px',
         '@media (max-width: 768px)': {
           fontSize: '18px',
           minWidth: '20rem',
@@ -55,16 +56,22 @@ export default function DaoCard({ dao, chain }) {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          height: '40px',
-          width: '40px',
+          height: '48px',
+          width: '48px',
         }}
       >
         {getRandomEmoji(dao['id'])}
       </Box>
-      <Flex dir="col" gap="sm">
+      <Flex
+        dir="col"
+        gap="sm"
+        css={{
+          gap: '10px',
+        }}
+      >
         <Name
           css={{
-            fontSize: '19px',
+            fontSize: '24px',
           }}
         >
           {dao['token']['name']}

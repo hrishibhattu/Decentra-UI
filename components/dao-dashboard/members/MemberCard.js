@@ -21,12 +21,13 @@ export default function MemberCard({ member, totalSupply }) {
   return (
     <Box
       css={{
+        minWidth: '700px',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr 1fr',
-        width: '100%',
         background: '$gray1',
         padding: '1rem',
         gap: '1rem 2rem',
+        marginLeft: '5vw',
       }}
     >
       {isLoading ? (

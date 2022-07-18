@@ -7,14 +7,16 @@ export default function Headertitle() {
       css={{
         position: 'relative',
         color: '#bdbdbd',
-        fontSize: '50px',
-        fontFamily: 'Screen',
+        fontSize: '40px',
+        fontFamily: 'arial',
         maxWidth: '1008px',
         margin: '35px 0px 80px 0',
+        display: 'flex',
+        flexDirection: 'column',
         lineHeight: '1.1',
       }}
     >
-      We help you create a DAO without code. In less than 5 minutes.
+      Create your DAO, mint your token today with 0 code written.
     </Flex>
   )
 }

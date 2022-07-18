@@ -49,19 +49,7 @@ export default function Checkout({ setStep }) {
   const deployKaliDao = useCallback(async () => {
     if (!account || !activeChain) return
 
-    const {
-      name,
-      symbol,
-      transferability,
-      votingPeriod,
-      votingPeriodUnit,
-      quorum,
-      approval,
-      founders,
-      legal,
-      docType,
-      email,
-    } = state
+    const { name, symbol, transferability, votingPeriod, votingPeriodUnit, quorum, approval, founders, docType } = state
 
     const docs_ = validateDocs(
       docType,

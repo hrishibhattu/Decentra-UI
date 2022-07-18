@@ -26,6 +26,7 @@ export default function Members({ members }) {
           color: '$gray11',
           padding: '1rem',
           fontFamily: 'Regular',
+          marginLeft: '5vw',
         }}
       >
         <Text css={{ fontWeight: '800' }}>Member</Text>

@@ -63,7 +63,7 @@ export const ProposalCard = ({ proposal }) => {
         background: '#3d4046',
         marginBottom: '25px',
         borderRadius: '12px',
-
+        boxShadow: 'rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px',
         '&:hover': {
           background: '$gray800',
         },
