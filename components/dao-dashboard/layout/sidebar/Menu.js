@@ -32,7 +32,7 @@ export default function Menu({ saleActive }) {
       },
     },
     {
-      title: 'crowdsale',
+      title: 'Crowdsale',
       pathname: '/daos/[chainId]/[dao]/crowdsale',
       query: {
         chainId: router.query.chainId,
