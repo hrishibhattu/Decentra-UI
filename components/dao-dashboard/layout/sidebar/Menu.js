@@ -32,6 +32,14 @@ export default function Menu({ saleActive }) {
       },
     },
     {
+      title: 'Crowdsale',
+      pathname: '/daos/[chainId]/[dao]/crowdsale',
+      query: {
+        chainId: router.query.chainId,
+        dao: router.query.dao,
+      },
+    },
+    {
       title: 'Info',
       pathname: '/daos/[chainId]/[dao]/info',
       query: {
@@ -46,9 +54,8 @@ export default function Menu({ saleActive }) {
       css={{
         position: 'fixed',
         flexDirection: 'column',
-        gap: '2rem',
         background: '#2f3136',
-        width: '200px',
+        width: '250px',
         height: '100%',
         paddingTop: '10vh',
         zIndex: '100',
@@ -66,12 +73,11 @@ export default function Menu({ saleActive }) {
             <div
               style={{
                 marginTop: '0em',
-                borderBottom: '0.2px solid gray',
-                color: 'white',
+                color: '#bdbdbd',
                 display: 'flex',
                 alignItems: 'center',
-                paddingLeft: '10px',
-                height: '50px',
+                padding: '0 20px',
+                height: '35px',
               }}
             >
               {link.title}
@@ -93,12 +99,11 @@ export default function Menu({ saleActive }) {
             <div
               style={{
                 marginTop: '0em',
-                borderBottom: '0.2px solid gray',
-                color: 'white',
+                color: '#bdbdbd',
                 display: 'flex',
                 alignItems: 'center',
-                paddingLeft: '10px',
-                height: '50px',
+                padding: '0 20px',
+                height: '35px',
               }}
             >
               Crowdsale
