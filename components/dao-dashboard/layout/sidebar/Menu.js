@@ -71,16 +71,10 @@ export default function Menu({ saleActive }) {
             height: '74px',
             borderBottom: '1px solid #a3a3ac1a',
             boxShadow: '0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d',     
+            fontSIze: '28px',
           }}
         >
-          <a
-style={{
-      fontSize: '28px',
-      paddingTop: '6px', 
-      }}
->
           DAOName
-<a>
         </div>
       </Link>
       {links.map((link, index) => {
