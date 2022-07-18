@@ -76,7 +76,7 @@ export default function Menu({ saleActive }) {
         >
           <a
 style={{
-      font-size: '26px',
+      fontSize: '28px',
       paddingTop: '6px', 
       }}
 >
