@@ -114,6 +114,7 @@ export const ProposalCard = ({ proposal }) => {
               css={{
                 justifyContent: 'flex-start',
                 alignItems: 'center',
+                gap: '10px',
               }}
             >
               <Text
