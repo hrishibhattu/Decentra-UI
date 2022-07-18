@@ -71,7 +71,7 @@ export default function Tag({ type }) {
         color: `$gray11`,
         background: '$gray3',
         padding: '2px 10px',
-        borderRadius: '20px',
+        borderRadius: '7.5px',
         border: '1px solid $gray4',
         fontWeight: '800',
         fontFamily: 'Regular',
