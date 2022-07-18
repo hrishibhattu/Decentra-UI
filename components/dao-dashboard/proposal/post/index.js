@@ -2,7 +2,8 @@ import { Pencil1Icon } from '@radix-ui/react-icons'
 import React, { useMemo } from 'react'
 import { Flex, Text } from '../../../../styles/elements'
 import { ProposalCard } from './ProposalCard'
-import NewProposal from './NewProposal'
+import NewProposal from '../../newproposal/'
+
 
 export default function Proposals({ proposals }) {
   // filtering out cancelled proposals
