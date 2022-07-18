@@ -2,6 +2,12 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import { Flex } from '../../../../styles/elements'
 import Link from 'next/link'
+import { Dialog, DialogTrigger, DialogContent } from '../../../../styles/Dialog'
+import { NewProposalModal } from '../../newproposal/'
+import { getMembers } from '../../../../graph/queries'
+
+import { addresses } from '../../../../constants/addresses'
+import REDEMPTION_ABI from '../../../../abi/KaliDAOredemption.json'
 
 export default function Menu({ saleActive }) {
   const router = useRouter()
@@ -77,6 +83,39 @@ export default function Menu({ saleActive }) {
           DAOName
         </div>
       </Link>
+<Flex align="center">
+        {/* TODO: Add check for whether redemption has started */}
+        <Dialog>
+          <DialogTrigger>
+            <Button
+              variant="brutal"
+              css={{
+                position: 'relative',
+                bottom: '0',
+                right: '0',
+                left: '0',
+                width: '5rem',
+                margin: '1rem',
+              }}
+            >
+              {isMember ? (!isRedemptionLoading ? (redemption == 0 ? 'JOINED' : 'QUIT') : null) : 'JOIN'}
+            </Button>
+          </DialogTrigger>
+          <DialogContent>
+            {isMember ? (
+              !isRedemptionLoading ? (
+                redemption == 0 ? (
+                  <NewProposalModal proposalProp="tribute" />
+                ) : (
+                  <NewProposalModal proposalProp="quit" />
+                )
+              ) : null
+            ) : (
+              <NewProposalModal proposalProp="tribute" />
+            )}
+          </DialogContent>
+        </Dialog>
+      </Flex>
       {links.map((link, index) => {
         return (
           <Link
