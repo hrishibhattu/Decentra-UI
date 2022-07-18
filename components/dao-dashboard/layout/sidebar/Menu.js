@@ -54,27 +54,27 @@ export default function Menu({ saleActive }) {
       }}
     >
       <Link
-          href={{
-            pathname: '/daos/[chainId]/[dao]/crowdsale',
-            query: {
-              chainId: router.query.chainId,
-              dao: router.query.dao,
-            },
+        href={{
+          pathname: '/daos/[chainId]/[dao]/crowdsale',
+          query: {
+            chainId: router.query.chainId,
+            dao: router.query.dao,
+          },
+        }}
+      >
+        <div
+          style={{
+            marginTop: '0em',
+            color: '#bdbdbd',
+            display: 'flex',
+            alignItems: 'center',
+            padding: '0 20px',
+            height: '35px',
           }}
         >
-          <div
-            style={{
-              marginTop: '0em',
-              color: '#bdbdbd',
-              display: 'flex',
-              alignItems: 'center',
-              padding: '0 20px',
-              height: '35px',
-            }}
-          >
-            DAOName
-          </div>
-        </Link>
+          DAOName
+        </div>
+      </Link>
       {links.map((link, index) => {
         return (
           <Link
