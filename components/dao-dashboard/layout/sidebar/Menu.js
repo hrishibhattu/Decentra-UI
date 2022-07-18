@@ -73,10 +73,10 @@ export default function Menu({ saleActive }) {
             <div
               style={{
                 marginTop: '0em',
-                color: 'white',
+                color: '#bdbdbd',
                 display: 'flex',
                 alignItems: 'center',
-                paddingLeft: '10px',
+                padding: '0 20px',
                 height: '35px',
               }}
             >
