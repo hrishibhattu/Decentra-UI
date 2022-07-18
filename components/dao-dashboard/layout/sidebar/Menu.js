@@ -55,7 +55,7 @@ export default function Menu({ saleActive }) {
         position: 'fixed',
         flexDirection: 'column',
         background: '#2f3136',
-        width: '200px',
+        width: '250px',
         height: '100%',
         paddingTop: '10vh',
         zIndex: '100',
