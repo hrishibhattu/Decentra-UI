@@ -69,7 +69,7 @@ export default function Menu({ saleActive }) {
                 color: '#bdbdbd',
                 display: 'flex',
                 alignItems: 'center',
-                padding: '0 10px',
+                padding: '0 20px',
                 height: '35px',
               }}
             >
