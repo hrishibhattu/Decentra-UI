@@ -66,12 +66,11 @@ export default function Menu({ saleActive }) {
             <div
               style={{
                 marginTop: '0em',
-                borderBottom: '0.2px solid gray',
-                color: 'white',
+                color: '#bdbdbd',
                 display: 'flex',
                 alignItems: 'center',
-                paddingLeft: '10px',
-                height: '50px',
+                padding: '0 10px',
+                height: '35px',
               }}
             >
               {link.title}
@@ -92,12 +91,11 @@ export default function Menu({ saleActive }) {
           <div
             style={{
               marginTop: '0em',
-              borderBottom: '0.2px solid gray',
-              color: 'white',
+              color: '#bdbdbd',
               display: 'flex',
               alignItems: 'center',
-              paddingLeft: '10px',
-              height: '50px',
+              padding: '0 20px',
+              height: '35px',
             }}
           >
             Crowdsale
