@@ -10,7 +10,8 @@ export default function DaoLayout({ heading, crowdsale, children, props }) {
         css={{
           position: 'absolute',
           top: '7rem',
-          left: '200px',
+          left: '250px',
+          width: 'calc(100% - 250px)',
         }}
       >
         {children}
