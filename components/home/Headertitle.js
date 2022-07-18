@@ -13,6 +13,7 @@ export default function Headertitle() {
         margin: '35px 0px 80px 0',
         display: 'flex',
         flexDirection: 'column',
+        lineHeight: '1.1',
       }}
     >
       Create your DAO, mint your token today with 0 code written.
