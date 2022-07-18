@@ -4,7 +4,6 @@ import { Flex, Text } from '../../../../styles/elements'
 import { ProposalCard } from './ProposalCard'
 import NewProposal from '../../newproposal/'
 
-
 export default function Proposals({ proposals }) {
   // filtering out cancelled proposals
   const memoizedProposals = useMemo(
