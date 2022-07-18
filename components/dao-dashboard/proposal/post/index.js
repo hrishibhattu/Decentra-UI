@@ -21,6 +21,7 @@ export default function Proposals({ proposals }) {
       >
         Proposals
       </Text>
+      <NewProposal />
       <Flex dir="col">
         {memoizedProposals.length > 0 ? (
           memoizedProposals.map((proposal) => <ProposalCard key={proposal['id']} proposal={proposal} />)
