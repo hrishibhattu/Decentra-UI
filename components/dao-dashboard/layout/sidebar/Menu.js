@@ -80,31 +80,29 @@ export default function Menu({ saleActive }) {
         )
       })}
       {saleActive === true && (
-        <Icon>
-          <Link
-            href={{
-              pathname: '/daos/[chainId]/[dao]/crowdsale',
-              query: {
-                chainId: router.query.chainId,
-                dao: router.query.dao,
-              },
+        <Link
+          href={{
+            pathname: '/daos/[chainId]/[dao]/crowdsale',
+            query: {
+              chainId: router.query.chainId,
+              dao: router.query.dao,
+            },
+          }}
+        >
+          <div
+            style={{
+              marginTop: '0em',
+              borderBottom: '0.2px solid gray',
+              color: 'white',
+              display: 'flex',
+              alignItems: 'center',
+              paddingLeft: '10px',
+              height: '50px',
             }}
           >
-            <div
-              style={{
-                marginTop: '0em',
-                borderBottom: '0.2px solid gray',
-                color: 'white',
-                display: 'flex',
-                alignItems: 'center',
-                paddingLeft: '10px',
-                height: '50px',
-              }}
-            >
-              Crowdsale
-            </div>
-          </Link>
-        </Icon>
+            Crowdsale
+          </div>
+        </Link>
       )}
     </Flex>
   )
