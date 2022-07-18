@@ -49,7 +49,6 @@ export default function Menu({ saleActive }) {
         background: '#2f3136',
         width: '250px',
         height: '100%',
-        paddingTop: '10vh',
         zIndex: '100',
       }}
     >
