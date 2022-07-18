@@ -46,7 +46,6 @@ export default function Menu({ saleActive }) {
       css={{
         position: 'fixed',
         flexDirection: 'column',
-        gap: '2rem',
         background: '#2f3136',
         width: '250px',
         height: '100%',
