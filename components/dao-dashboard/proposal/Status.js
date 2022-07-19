@@ -41,7 +41,7 @@ export default function Status({ status }) {
         color: `$gray12`,
         background: `$${color}3`,
         padding: '2px 10px',
-        borderRadius: '20px',
+        borderRadius: '7.50px',
         border: `1px solid $${color}4`,
         fontWeight: '800',
         fontFamily: 'Regular',

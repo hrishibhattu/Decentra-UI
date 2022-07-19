@@ -15,7 +15,7 @@ const Box = styled('div', {
         color: '$gray11',
         fontFamily: 'Light',
         padding: '2px 10px',
-        borderRadius: '20px',
+        borderRadius: '7.5px',
 
         '&:hover': {
           backgroundColor: '$gray4',

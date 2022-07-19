@@ -2,6 +2,7 @@ import { Pencil1Icon } from '@radix-ui/react-icons'
 import React, { useMemo } from 'react'
 import { Flex, Text } from '../../../../styles/elements'
 import { ProposalCard } from './ProposalCard'
+import NewProposal from '../../../layout/sidebar/NewProposal'
 
 export default function Proposals({ proposals }) {
   // filtering out cancelled proposals
@@ -21,6 +22,7 @@ export default function Proposals({ proposals }) {
       >
         Proposals
       </Text>
+      <NewProposal />
       <Flex dir="col">
         {memoizedProposals.length > 0 ? (
           memoizedProposals.map((proposal) => <ProposalCard key={proposal['id']} proposal={proposal} />)
