@@ -9,7 +9,7 @@ import DaoCard from './DaoCard'
 export default function Log({ allDaos }) {
   // const { activeChain } = useNetwork()
   // TODO: defaulting to mainnet because error when trying to fetch from goerli
-  const [chain, setChain] = useState(1)
+  const [chain, setChain] = 10
 
   return (
     <Flex dir="col" gap="md">
