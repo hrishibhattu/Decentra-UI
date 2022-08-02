@@ -38,7 +38,7 @@ export default function MyDAOs({ allDaos }) {
         <Headertitle />
         {daos &&
           (daos.length > 1 ? (
-            <ResultsText> You are in {daos.length} DAOs </ResultsText>
+            <ResultsText> You've joined {daos.length} DAOs </ResultsText>
           ) : (
             daos.length === 1 && <ResultsText>You are in {daos.length} DAO</ResultsText>
           ))}
