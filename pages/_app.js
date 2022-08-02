@@ -7,7 +7,7 @@ import { MoralisProvider } from 'react-moralis'
 import globalStyles from '../styles/globalStyles'
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.polygon, chain.arbitrum, chain.optimism, chain.rinkeby, chain.goerli],
+  [chain.optimism],
   [infuraProvider({ infuraId: process.env.NEXT_PUBLIC_INFURA_ID }), publicProvider()],
 )
 
