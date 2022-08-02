@@ -37,7 +37,7 @@ export default function MyDAOs({ allDaos }) {
       >
         <Headertitle />
         {daos &&
-         (daos.length > 1 ? (
+         (daos.length < 1 ? (
             <ResultsText> You haven't joined a DAO yet </ResultsText>
           ) : (
            daos.length > 1 ? (
