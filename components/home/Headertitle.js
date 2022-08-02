@@ -7,7 +7,7 @@ export default function Headertitle() {
       css={{
         position: 'relative',
         color: '#bdbdbd',
-        fontSize: '40px',
+        fontSize: '54px',
         fontFamily: 'Bold',
         maxWidth: '1008px',
         margin: '35px 0px 80px 0',
