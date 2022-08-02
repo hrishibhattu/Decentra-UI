@@ -37,10 +37,13 @@ export default function MyDAOs({ allDaos }) {
       >
         <Headertitle />
         {daos &&
-          (daos.length > 1 ? (
+         (daos.length > 1 ? (
+            <ResultsText> You haven't joined a DAO yet </ResultsText>
+          ) : (
+           daos.length > 1 ? (
             <ResultsText> You've joined {daos.length} DAOs </ResultsText>
           ) : (
-            daos.length === 1 && <ResultsText>You are in {daos.length} DAO</ResultsText>
+            daos.length === 1 && <ResultsText>You've joined {daos.length} DAO</ResultsText>
           ))}
         <Results>
           {daos && daos.map((dao) => <DaoCard key={dao['dao']['id']} dao={dao['dao']} />)} <NewDao />
