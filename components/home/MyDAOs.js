@@ -44,7 +44,7 @@ export default function MyDAOs({ allDaos }) {
             <ResultsText> You've joined {daos.length} DAOs </ResultsText>
           ) : (
             daos.length === 1 && <ResultsText>You've joined {daos.length} DAO</ResultsText>
-          ))},
+          )),
         <Results>
           {daos && daos.map((dao) => <DaoCard key={dao['dao']['id']} dao={dao['dao']} />)} <NewDao />
         </Results>
