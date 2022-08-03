@@ -49,8 +49,6 @@ export default function MyDAOs({ allDaos }) {
         </Results>
 
         {<Welcome allDaos={allDaos && allDaos} />}
-
-        {daos && daos.length === 0 && <Welcome allDaos={allDaos && allDaos} />}
       </Flex>
     </>
   )

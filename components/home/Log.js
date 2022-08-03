@@ -9,22 +9,10 @@ import DaoCard from './DaoCard'
 export default function Log({ allDaos }) {
   // const { activeChain } = useNetwork()
   // TODO: defaulting to mainnet because error when trying to fetch from goerli
-  const [chain, setChain] = useState(1)
+  const [chain, setChain] = useState(10)
 
   return (
     <Flex dir="col" gap="md">
-      <Select
-        name="chainId"
-        onChange={(e) => setChain(e.target.value)}
-        defaultValue={chain}
-        style={{ width: '100%', height: 50, fontSize: '1.5rem' }}
-      >
-        <Select.Item value={1}>Mainnet</Select.Item>
-        <Select.Item value={137}>Polygon</Select.Item>
-        <Select.Item value={42161}>Arbitrum</Select.Item>
-        <Select.Item value={10}>Optimism</Select.Item>
-      </Select>
-
       <Box
         css={{
           display: 'grid',
