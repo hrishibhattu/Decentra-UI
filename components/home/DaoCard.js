@@ -8,11 +8,11 @@ import { getRandomEmoji } from '../../utils/'
 import { Avatar, AvatarImage, AvatarFallback } from '@radix-ui/react-avatar'
 
 const Name = styled('div', {
-  fontFamily: 'arial',
+  fontFamily: 'Bold',
 })
 
 const Address = styled('div', {
-  fontFamily: 'Screen',
+  fontFamily: 'Bold',
 })
 
 // disable when not active chain
@@ -58,6 +58,7 @@ export default function DaoCard({ dao, chain }) {
           justifyContent: 'center',
           height: '48px',
           width: '48px',
+          minWwidth: '48px',
         }}
       >
         {getRandomEmoji(dao['id'])}
@@ -72,6 +73,10 @@ export default function DaoCard({ dao, chain }) {
         <Name
           css={{
             fontSize: '24px',
+            width: '226px',
+            overflowX: 'clip',
+            whiteSpace: 'nowrap',
+            textOverflow: 'ellipsis',
           }}
         >
           {dao['token']['name']}
