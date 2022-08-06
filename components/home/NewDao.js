@@ -19,7 +19,7 @@ export default function NewDao() {
             border: '2px solid #737373ad',
             padding: '0.7rem',
             fontSize: '20px',
-            fontFamily: 'Screen',
+            fontFamily: 'Bold',
             borderRadius: '15px',
             gap: '20px',
 
@@ -40,7 +40,7 @@ export default function NewDao() {
             },
           }}
         >
-          <PlusIcon height="20px" width="20px" /> Create DAO
+          <PlusIcon height="20px" width="20px" /> Create
         </Flex>
       </DialogTrigger>
       <DialogContent>
