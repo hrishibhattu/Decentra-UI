@@ -24,8 +24,8 @@ export default function NewDao() {
             gap: '20px',
 
             '&:hover': {
-    background: '#202124',
-    border: '2px solid #5f6063',
+              background: '#202124',
+              border: '2px solid #5f6063',
             },
 
             '@media (max-width: 768px)': {
