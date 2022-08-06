@@ -74,9 +74,9 @@ export default function DaoCard({ dao, chain }) {
           css={{
             fontSize: '24px',
             width: '226px',
-    overflowX: 'clip',
-    whiteSpace: 'nowrap',
-    textOverflow: 'ellipsis',
+            overflowX: 'clip',
+            whiteSpace: 'nowrap',
+            textOverflow: 'ellipsis',
           }}
         >
           {dao['token']['name']}
