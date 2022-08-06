@@ -4,9 +4,10 @@ import { Cross2Icon } from '@radix-ui/react-icons'
 import { pulse, contentShow, overlayShow } from './animation'
 
 const StyledOverlay = styled(DialogPrimitive.Overlay, {
-  backdropFilter: 'blur(30px) contrast(1)',
+  backdropFilter: 'blur(10px) contrast(1)',
   position: 'fixed',
   inset: 0,
+  zIndex: '100',
   '@media (prefers-reduced-motion: no-preference)': {
     animation: `${overlayShow} 150ms cubic-bezier(0.16, 1, 0.3, 1) forwards`,
   },
