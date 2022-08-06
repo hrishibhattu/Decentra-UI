@@ -24,14 +24,8 @@ export default function NewDao() {
             gap: '20px',
 
             '&:hover': {
-              background: '$violet5',
-              color: '$mauve12',
-              border: '1px solid $violet6',
-            },
-            '&:active': {
-              background: '$violet6',
-              color: '$mauve12',
-              border: '1px solid $violet7',
+    background: '#202124',
+    border: '2px solid #5f6063',
             },
 
             '@media (max-width: 768px)': {
