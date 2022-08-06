@@ -122,18 +122,18 @@ export default function Legal({ setStep }) {
               </Flex>
             </FormElement>
           )}
-          {watchDocs === 'existing' && (
-            <FormElement>
-              <Label htmlFor="existingDocs">Existing Docs</Label>
-              <Input
-                type="text"
-                name="existingDocs"
-                placeholder="Any link"
-                {...register('existingDocs')}
-                defaultValue={state.existingDocs}
-              />
-            </FormElement>
-          )}
+
+          <FormElement>
+            <Label htmlFor="existingDocs">Existing Docs</Label>
+            <Input
+              type="text"
+              name="existingDocs"
+              placeholder="Any link"
+              {...register('existingDocs')}
+              defaultValue={state.existingDocs}
+            />
+          </FormElement>
+
           {watchDocs && <FormElement>{legalEntities[watchDocs]['message']}</FormElement>}
           {watchDocs && legalEntities[watchDocs]['template'] != null && (
             <Text
