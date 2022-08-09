@@ -15,7 +15,7 @@ export function Dashboard({ proposals }) {
       }}
     >
       <Proposals proposals={proposals} />
-      <Sidebar />
+      {/* <Sidebar /> */}
     </Flex>
   )
 }

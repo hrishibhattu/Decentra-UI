@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/link-passhref */
 import { useRouter } from 'next/router'
 import React from 'react'
 import { Flex } from '../../../../styles/elements'
 import Link from 'next/link'
+import DaoProfile from '../../daoprofile'
 
 export default function Menu({ saleActive }) {
   const router = useRouter()
@@ -49,7 +51,8 @@ export default function Menu({ saleActive }) {
         background: '#2f3136',
         width: '250px',
         height: '100%',
-        zIndex: '100',
+        top: '75px'
+        // zIndex: '100',
       }}
     >
       <Link
@@ -74,9 +77,10 @@ export default function Menu({ saleActive }) {
             fontSize: '28px',
           }}
         >
-          DAOName
+          something
         </div>
       </Link>
+      <DaoProfile />
       {links.map((link, index) => {
         return (
           <Link
@@ -94,6 +98,7 @@ export default function Menu({ saleActive }) {
                 alignItems: 'center',
                 padding: '0 20px',
                 height: '35px',
+                cursor: 'pointer',
               }}
             >
               {link.title}
@@ -119,6 +124,7 @@ export default function Menu({ saleActive }) {
               alignItems: 'center',
               padding: '0 20px',
               height: '35px',
+              cursor: 'pointer',
             }}
           >
             Crowdsale

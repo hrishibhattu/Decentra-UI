@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Button, Flex, Box, Text } from '../../../../styles/elements'
 import { Dialog, DialogTrigger, DialogContent } from '../../../../styles/Dialog'
-import { NewProposalModal } from '../../newproposal/'
+import { NewProposalModal } from '../../newproposal'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useBalance, useAccount, useContractRead } from 'wagmi'
@@ -13,7 +13,7 @@ import { getRandomEmoji } from '../../../../utils'
 import { addresses } from '../../../../constants/addresses'
 import REDEMPTION_ABI from '../../../../abi/KaliDAOredemption.json'
 
-export default function ProfileComponent({ dao }) {
+export default function ProfileComponent() {
   const router = useRouter()
   const daoAddress = router.query.dao
   const daoChain = Number(router.query.chainId)
