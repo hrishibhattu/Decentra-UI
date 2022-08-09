@@ -9,13 +9,16 @@ const StyledHeader = styled(Flex, {
   boxShadow: '0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d',
   background: '#36393f',
   height: '74px',
-  width: 'calc(100% - 250px)',
+  // width: '' + (heading === 'Decentra' ? '100%' : 'calc(100% - 250px)'),
+  width: 'auto',
+  left: '0px',
+  // left: '' + heading === "Decentra" ? '0px' : '250px',
   position: 'fixed',
-  left: '250px',
   right: '0',
   top: '0',
   justifyContent: 'space-between',
   alignItems: 'center',
+  cursor: 'pointer',
 })
 
 export default function Header({ heading, props }) {
@@ -24,8 +27,11 @@ export default function Header({ heading, props }) {
       <Flex
         css={{
           position: 'relative',
-          width: '100%',
+          // width: '100%',
+          width: '' + (heading === 'Decentra' ? '100%' : 'calc(100% - 297px)'),
           height: '5rem',
+          left: '' + (heading === 'Decentra' ? '0px' : '250px'),
+          // left: '250px',
           padding: '0px 1.5rem',
           justifyContent: 'space-between',
           alignItems: 'center',
@@ -47,7 +53,7 @@ export default function Header({ heading, props }) {
               },
             }}
           >
-            Proposals
+            {heading}
           </Text>
         </Link>
 
