@@ -9,14 +9,13 @@ const StyledHeader = styled(Flex, {
   boxShadow: '0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d',
   background: '#36393f',
   height: '74px',
-  width: '100%',
+  width: 'calc(100% - 250px)',
   position: 'fixed',
-  left: '0',
+  left: '250px',
   right: '0',
   top: '0',
   justifyContent: 'space-between',
   alignItems: 'center',
-  zIndex: '99',
 })
 
 export default function Header({ heading, props }) {
@@ -42,13 +41,13 @@ export default function Header({ heading, props }) {
             as="h1"
             variant="heading"
             css={{
-              fontFamily: 'Bold',
+              fontFamily: 'Screen',
               '@media (max-width: 1040px)': {
                 display: 'none',
               },
             }}
           >
-            {heading}
+            Proposals
           </Text>
         </Link>
 

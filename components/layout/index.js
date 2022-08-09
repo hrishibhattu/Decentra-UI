@@ -8,6 +8,7 @@ export default function Layout({ heading, children, props }) {
       <Box
         css={{
           fontFamily: 'Screen',
+          position: 'relative',
         }}
         {...props}
       >

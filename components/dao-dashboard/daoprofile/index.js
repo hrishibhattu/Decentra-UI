@@ -44,7 +44,7 @@ export default function DaoProfile() {
     return () => {
       mounted = false
     }
-  }, )
+  })
 
   useEffect(() => {
     if (members?.members) {
@@ -67,18 +67,45 @@ export default function DaoProfile() {
         <Dialog>
           <DialogTrigger>
             <Button
-              variant="brutal"
+              // variant="brutal"
               css={{
                 position: 'relative',
                 bottom: '0',
                 right: '0',
                 left: '0',
-                width: '5rem',
+                width: '220px',
+                height: '45px',
                 marginBottom: '15px',
+                color: '#bdbdbd',
+                border: '2px solid #737373ad',
+                fontFamily: 'Screen',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                backgroundColor: 'transparent',
+                '&:hover': {
+                  background: '$violet5',
+                  color: '$mauve12',
+                  border: '2px solid $violet6',
+                },
+                '&:active': {
+                  background: '$violet6',
+                  color: '$mauve12',
+                  border: '2px solid $violet7',
+                },
+
+                '@media (max-width: 768px)': {
+                  fontSize: '18px',
+                  minWidth: '25px',
+                },
               }}
             >
-              {isMember ? (!isRedemptionLoading ? (redemption == 0 ? 'JOINED' : 'QUIT') : null) : 'JOIN'}
-              {/* JOIN */}
+              {isMember
+                ? !isRedemptionLoading
+                  ? redemption == 0
+                    ? 'JOINED'
+                    : 'QUIT'
+                  : null
+                : 'APPLY FOR MEMBERSHIP'}
             </Button>
           </DialogTrigger>
           <DialogContent>

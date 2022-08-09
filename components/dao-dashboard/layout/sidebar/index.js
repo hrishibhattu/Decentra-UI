@@ -3,7 +3,7 @@ import NewProposal from './NewProposal'
 import Menu from './Menu'
 import { Flex } from '../../../../styles/elements'
 
-export default function Sidebar({ crowdsale }) {
+export default function Sidebar({ crowdsale, heading }) {
   return (
     <Flex
       css={{
@@ -14,8 +14,7 @@ export default function Sidebar({ crowdsale }) {
         right: 0,
       }}
     >
-      <Menu saleActive={crowdsale?.active} />
-      <NewProposal />
+      <Menu heading={heading} saleActive={crowdsale?.active} />
     </Flex>
   )
 }

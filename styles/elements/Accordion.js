@@ -37,7 +37,6 @@ const StyledItem = styled(AccordionPrimitive.Item, {
 
   '&:focus-within': {
     position: 'relative',
-    zIndex: 1,
     boxShadow: `0 0 0 2px ${'$gray'}`,
   },
 })
