@@ -2,10 +2,10 @@ import Layout from '../../layout'
 import Sidebar from './sidebar/'
 import { Box } from '../../../styles/elements'
 
-export default function DaoLayout({ heading, crowdsale, children, props }) {
+export default function DaoLayout({ heading, data, crowdsale, children, props }) {
   return (
-    <Layout heading={heading} {...props}>
-      <Sidebar crowdsale={crowdsale} />
+    <Layout heading={heading} data={data} {...props}>
+      <Sidebar heading={heading} crowdsale={crowdsale} data={data} />
       <Box
         css={{
           position: 'absolute',
