@@ -23,7 +23,7 @@ export default function DaoProfile() {
   })
   const { data: redemption, isLoading: isRedemptionLoading } = useContractRead(
     {
-      addressOrName: addresses[daoChain]['extensions']['redemption'],
+      addressOrName: addresses[daoChain],
       contractInterface: REDEMPTION_ABI,
     },
     'redemptionStarts',
