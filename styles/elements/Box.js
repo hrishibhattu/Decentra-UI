@@ -40,6 +40,7 @@ const Box = styled('div', {
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: '100%',
+        display: 'none',
 
         '&:hover': {
           animation: `${bounce} 0.3s linear 0ms infinite alternate`,
