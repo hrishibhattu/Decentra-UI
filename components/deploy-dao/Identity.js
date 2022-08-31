@@ -68,7 +68,7 @@ export default function Identity({ setStep }) {
           <Input
             type="text"
             name="name"
-            placeholder="Decentra DAO"
+            placeholder="Soviet Union Table Tennis"
             aria-invalid={errors.name ? 'true' : 'false'}
             {...register('name', {
               required: {
@@ -87,7 +87,7 @@ export default function Identity({ setStep }) {
           <Input
             type="text"
             name="symbol"
-            placeholder="DEC"
+            placeholder="SUTT"
             aria-invalid={errors.symbol ? 'true' : 'false'}
             {...register('symbol', {
               required: {
