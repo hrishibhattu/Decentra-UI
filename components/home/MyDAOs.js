@@ -36,18 +36,26 @@ export default function MyDAOs({ allDaos }) {
         }}
       >
         <Headertitle />
-        {daos &&
-          (daos.length < 1 ? (
-            <ResultsText> You haven't joined a DAO yet </ResultsText>
-          ) : daos.length > 1 ? (
-            <ResultsText> You've joined {daos.length} DAOs </ResultsText>
-          ) : (
-            daos.length === 1 && <ResultsText>You've joined {daos.length} DAO</ResultsText>
-          ))}
+        <Flex
+          css={{
+            marginBottom: '20px',
+            width:'1008px'
+          }}
+        >
+          {daos ?
+            (daos.length < 1 ? (
+              <ResultsText> You haven't joined a DAO yet </ResultsText>
+            ) : daos.length > 1 ? (
+              <ResultsText> You've joined {daos.length} DAOs </ResultsText>
+            ) : (
+              daos.length === 1 && <ResultsText>You've joined {daos.length} DAO</ResultsText>
+            )) : (
+              <ResultsText> You haven't joined a DAO yet </ResultsText>
+            )}
+        </Flex>
         <Results>
           {daos && daos.map((dao) => <DaoCard key={dao['dao']['id']} dao={dao['dao']} />)} <NewDao />
         </Results>
-
         {<Welcome allDaos={allDaos && allDaos} />}
       </Flex>
     </>

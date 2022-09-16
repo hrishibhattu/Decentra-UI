@@ -19,7 +19,7 @@ export default function NewDao() {
             border: '2px solid #737373ad',
             padding: '0.7rem',
             fontSize: '20px',
-            fontFamily: 'Bold',
+            fontFamily: 'Screen',
             borderRadius: '15px',
             gap: '20px',
 

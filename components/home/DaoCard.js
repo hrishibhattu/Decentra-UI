@@ -8,11 +8,11 @@ import { getRandomEmoji } from '../../utils/'
 import { Avatar, AvatarImage, AvatarFallback } from '@radix-ui/react-avatar'
 
 const Name = styled('div', {
-  fontFamily: 'Bold',
+  fontFamily: 'Screen',
 })
 
 const Address = styled('div', {
-  fontFamily: 'Bold',
+  fontFamily: 'Screen',
 })
 
 // disable when not active chain

@@ -13,7 +13,7 @@ export default function ActivityLog({ allDaos }) {
           paddingBottom: '0.5rem',
           justifyContent: 'space-between',
           alignItems: 'center',
-          fontFamily: 'Bold',
+          fontFamily: 'Screen',
 
           '@media (max-width: 768px)': {
             fontSize: '26px',

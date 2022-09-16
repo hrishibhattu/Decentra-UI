@@ -8,7 +8,7 @@ export default function Headertitle() {
         position: 'relative',
         color: '#bdbdbd',
         fontSize: '54px',
-        fontFamily: 'Bold',
+        fontFamily: 'Screen',
         maxWidth: '1008px',
         margin: '35px 0px 80px 0',
         display: 'flex',

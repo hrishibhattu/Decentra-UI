@@ -5,12 +5,13 @@ import NewDaoSquare from './NewDaoSquare'
 export const ResultsText = styled('div', {
   // TODO: Add font Monument Grotesk
   color: '$foreground',
-  fontSize: '18px',
-  fontFamily: 'Italic',
+  fontSize: '26px',
+  fontFamily: 'Screen',
   fontStyle: 'italic',
   lineHeight: '100%',
   fontWeight: '500',
   marginBottom: '0.6rem',
+  alignSelf: 'flex-start'
 })
 
 export const Results = styled('div', {
