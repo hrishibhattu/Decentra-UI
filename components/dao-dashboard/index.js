@@ -11,7 +11,9 @@ export function Dashboard({ proposals }) {
         position: 'relative',
         justifyContent: 'space-evenly',
         gap: '1rem',
-        margin: 'auto',
+        margin: '20px',
+        marginTop: '0px',
+        zIndex: '-1'
       }}
     >
       <Proposals proposals={proposals} />

@@ -2,7 +2,7 @@ import Header from './Header'
 import Head from 'next/head'
 import { Box } from '../../styles/elements'
 
-export default function Layout({ heading, data, children, props }) {
+export default function Layout({ heading, children, props }) {
   return (
     <>
       <Box
@@ -16,7 +16,7 @@ export default function Layout({ heading, data, children, props }) {
           <title>{heading}</title>
           <meta property="og:title" content="My page title" key="title" />
         </Head>
-        <Header heading={heading} data={data} />
+        <Header heading={heading} />
         {children}
       </Box>
     </>

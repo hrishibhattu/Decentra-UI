@@ -30,7 +30,7 @@ export default function NewDao() {
 
             '@media (max-width: 768px)': {
               fontSize: '18px',
-              minWidth: '25px',
+              // minWidth: '25px',
             },
           }}
         >

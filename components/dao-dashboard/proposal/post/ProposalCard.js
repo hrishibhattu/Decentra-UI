@@ -103,7 +103,6 @@ export const ProposalCard = ({ proposal }) => {
           <Flex
             gap="md"
             css={{
-              minWidth: '50rem',
               justifyContent: 'space-between',
               alignItems: 'center',
             }}

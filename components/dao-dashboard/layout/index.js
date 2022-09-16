@@ -4,7 +4,7 @@ import { Box } from '../../../styles/elements'
 
 export default function DaoLayout({ heading, data, crowdsale, children, props }) {
   return (
-    <Layout heading={heading} data={data} {...props}>
+    <Layout heading={heading} {...props}>
       <Sidebar heading={heading} crowdsale={crowdsale} data={data} />
       <Box
         css={{

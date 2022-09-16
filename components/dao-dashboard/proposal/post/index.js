@@ -23,7 +23,6 @@ export default function Proposals({ proposals }) {
             css={{
               position: 'relative',
               height: '96.18px',
-              border: '1px solid red',
               color: '#898888c2',
               border: '2px solid #737373ad',
               padding: '0.7rem',

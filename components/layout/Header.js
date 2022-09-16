@@ -26,18 +26,16 @@ export default function Header({ heading, props }) {
     <StyledHeader {...props}>
       <Flex
         css={{
-          position: 'relative',
-          // width: '100%',
-          width: '' + (heading === 'Decentra' ? '100%' : 'calc(100% - 297px)'),
+          position: 'fixed',
+          top: '0',
+          width: '' + (heading === 'Decentra' ? '95%' : 'calc(100% - 297px)'),
           height: '5rem',
           left: '' + (heading === 'Decentra' ? '0px' : '250px'),
-          // left: '250px',
           padding: '0px 1.5rem',
           justifyContent: 'space-between',
           alignItems: 'center',
-          gap: '5rem',
           '@media (max-width: 1040px)': {
-            justifyContent: 'flex-end',
+            justifyContent: 'space-between',
             margin: '0',
           },
         }}
@@ -49,7 +47,7 @@ export default function Header({ heading, props }) {
             css={{
               fontFamily: 'Screen',
               '@media (max-width: 1040px)': {
-                display: 'none',
+                // display: 'none',
               },
             }}
           >
